@@ -9,3 +9,4 @@ The code is not clean and DRY but help me learn a lot.
 
 - Use useReducer to control state with many state values.
 - Understand the flow and the logic of this pet project helps me improve my solving problem skill.
+- First time know about the concept 'Middleware'
