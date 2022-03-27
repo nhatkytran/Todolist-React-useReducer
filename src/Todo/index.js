@@ -1,6 +1,7 @@
 import { useReducer, useRef } from "react";
 
 import reducer, { initState } from "./reducer.js";
+import logger from "./logger.js";
 import {
   setTodo,
   setTodos,
@@ -12,7 +13,7 @@ import {
 function TodoApp() {
   const inputRef = useRef();
 
-  const [state, dispatch] = useReducer(reducer, initState);
+  const [state, dispatch] = useReducer(logger(reducer), initState);
   const { todo, todos, update, isUpdated } = state;
 
   function handleTodos(event) {
